@@ -1,0 +1,62 @@
+<head>
+    <meta charset="utf-8" />
+    <title>Char(T)</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+
+    <!-- Create a div where the graph will take place -->
+    
+  
+   <!-- <script src="textControl.js"></script>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </head>
+  
+  <body>
+    
+
+      <div class="textArea">
+        <textarea class="a9" id="msg" placeholder="Enter your text here..." onkeyup="getMessage()" rows="10" cols="60"  ></textarea>
+        <div class="options">
+          <button type="button" class="buttOn" onclick="removeSpaces()">Remove spaces</button>
+          <input type="text" id="char1" class="oneChar" placeholder="Free" maxlength="1" onkeyup="getMessage()">
+          <input type="text" id="char2" class="oneChar" placeholder="Free" maxlength="1" onkeyup="getMessage()">
+          <input type="text" id="char3" class="oneChar" placeholder="Free" maxlength="1" onkeyup="getMessage()">
+          <input type="text" id="char4" class="oneChar" placeholder="Free" maxlength="1" onkeyup="getMessage()">
+          <button type="button" class="buttOn2" onclick="instructions()">Instructions</button>
+        </div>
+        
+      </div>
+
+      <div class="heatMapa" id="heatmap"></div>
+    
+  
+    
+
+
+    <div class="bars" id="my_dataviz" style="text-align:center"></div>
+   
+  
+    <script src="index.js"></script>
+
+    
+    
+  </body>
+  
+  </html>
