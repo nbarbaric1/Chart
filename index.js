@@ -490,7 +490,7 @@ function setHeatMap(){
         var xPos= d3.mouse(this)[0]-95;
         var yPos= d3.mouse(this)[1]-55;
         tooltip.attr("transform", "translate(" + xPos + ", "  +  yPos + ")");
-        tooltip.select("text").text(d.left+": "+ d.down+", "+d.value);
+        tooltip.select("text").text("No of shows: "+ d.value);
 
       })
         .attr("x", function(d,i) { return x(d.down) })
