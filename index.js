@@ -217,7 +217,7 @@ function updateBars(dataX){
         
       })
       .transition()
-      .duration(0)
+      .duration(3)
         .attr("x", function(d) { return x(d.group); })
         .attr("y", function(d) { return y(d.value); })
         .attr("width", x.bandwidth())
@@ -490,7 +490,7 @@ function setHeatMap(){
         var xPos= d3.mouse(this)[0]-95;
         var yPos= d3.mouse(this)[1]-55;
         tooltip.attr("transform", "translate(" + xPos + ", "  +  yPos + ")");
-        tooltip.select("text").text("No of shows: "+ d.value);
+        tooltip.select("text").text("Occurrences: "+ d.value);
 
       })
         .attr("x", function(d,i) { return x(d.down) })
@@ -580,7 +580,7 @@ function setHeatMap(){
             var xPos= d3.mouse(this)[0]-95;
             var yPos= d3.mouse(this)[1]-55;
             tooltip.attr("transform", "translate(" + xPos + ", "  +  yPos + ")");
-            tooltip.select("text").text("No of shows: "+ d.value);
+            tooltip.select("text").text("Occurrences: "+ d.value);
     
           })
           .on("click", function(){
